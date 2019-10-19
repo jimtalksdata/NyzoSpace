@@ -74,6 +74,15 @@ function generate_addresses() {
     wrapper.innerHTML = content
 }
 
+function generate_from_ns() {
+    const ns = document.querySelector("#ns-input").value.trim()
+    const pubk = new NyzoStringPublicIdentifier(ns)
+    const string = nyzoStringEncoder.encode(stringObject)
+    const wrapper = document.querySelector("#pubk-input")
+    let content = string
+    wrapper.innerHTML = content
+}
+
 document.querySelector("#generate_mnemonic12").addEventListener("click", generate_mnemonic12)
 document.querySelector("#generate_mnemonic24").addEventListener("click", generate_mnemonic24)
 document.querySelector("#generate_addresses").addEventListener("click", generate_addresses)
