@@ -25,6 +25,18 @@
             <input type="NUMBER" class="form-control" id="BIP39-count" placeholder="10" aria-label="Addresses Count" autocomplete="off" value="10">
               <br />
             <button class="btn btn-primary" type="button" id="generate_addresses">Get Addresses</button>
+            <br />
+            <label for="ns-input">NyzoString (ID or KEY)</label>
+            <input type="TEXT" class="form-control" id="ns-input" placeholder="" aria-label="NyzoString" autocomplete="off" data-docs-version="4.3">
+            <button class="btn btn-primary" type="button" id="generate_from_ns">Generate legacy key</button>
+            <br />
+            <label for="pubk-input">Legacy public key</label>
+            <input type="TEXT" class="form-control" id="pubk-input" placeholder="" aria-label="PubKey" autocomplete="off" data-docs-version="4.3">
+            <button class="btn btn-primary" type="button" id="generate_from_pubk">Generate nyzoString</button>
+            <br />
+            <label for="privk-input">Legacy private key</label>
+            <input type="TEXT" class="form-control" id="privk-input" placeholder="" aria-label="PrivKey" autocomplete="off" data-docs-version="4.3">
+            <button class="btn btn-primary" type="button" id="generate_from_privk">Generate nyzoString</button>
           </form>
         </div>
       </div>
