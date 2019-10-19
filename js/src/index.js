@@ -86,3 +86,4 @@ function generate_from_ns() {
 document.querySelector("#generate_mnemonic12").addEventListener("click", generate_mnemonic12)
 document.querySelector("#generate_mnemonic24").addEventListener("click", generate_mnemonic24)
 document.querySelector("#generate_addresses").addEventListener("click", generate_addresses)
+document.querySelector("#generate_from_ns").addEventListener("click", generate_from_ns)
